@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/homepage.css"/>
+</header>
+
+
+<body>
+	<h1 class = "text-center">
+		OUR STRESS-FREE 60 SECONDS SIGNUP
+	</h1>
+	<p id ="warn"></p>
+
+	<div class = "signup"><form action="http://127.0.0.1:8080/process_login" method ="POST">
+		<p>EMAIL:</p><input id ="email" type="email" name ="email"><br>
+		<p>PASSWORD:</p><input type="password" id = "password" name="password">
+		<button id ="sign" type = "submit" value = "Submit" class = "btn" "btn-primary" "btn-block" "signup">LOG IN</button>
+    </form></div>
+	
+</body>
+<script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script><script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA94QpYLUlQJ2lGuy58_EHt2jmjBn5GEMY",
+    authDomain: "noteapp-6bed4.firebaseapp.com",
+    databaseURL: "https://noteapp-6bed4.firebaseio.com",
+    projectId: "noteapp-6bed4",
+    storageBucket: "noteapp-6bed4.appspot.com",
+    messagingSenderId: "59864116438"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="index.js"></script>
+
+
+</html>
